@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.css"
+    />
+    <link rel="icon" href="./images/logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-success sticky-top">
+      <div class="container-fluid">
+        <img
+          src="./images/logo.jpg"
+          class="rounded-circle me-2 logo"
+          alt="fruit logo"
+        />
+        <a class="navbar-brand fs-3 text-light" href="#">Fruits</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item me-xl-3 me-lg-1">
+              <a class="nav-link fs-5 active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-xl-3 me-lg-1">
+              <a class="nav-link fs-5" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item me-xl-3 me-lg-1">
+              <a class="nav-link fs-5" href="#about">About</a>
+            </li>
+            <li class="nav-item me-xl-3 me-lg-1">
+              <a class="nav-link fs-5" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item me-xl-3 me-lg-1">
+              <a class="nav-link fs-5" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item me-xl-3 me-lg-1 dropdown">
+              <a
+                class="nav-link fs-5 text-light dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Login
+              </a>
+              <ul class="dropdown-menu text-center bg-success border-light">
+                <li>
+                  <a class="dropdown-item fs-5" href="#">Register</a>
+                </li>
+                <li>
+                  <a class="dropdown-item fs-5" href="#">Login</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider border-light" />
+                </li>
+                <li>
+                  <a class="dropdown-item fs-5" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div id="btnSwitch" class="form-check form-switch me-2 d-flex align-items-center justify-content-center">
+            <input
+              class="form-check-input me-1 d-block"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label
+              class="form-check-label darkMode d-block fs-5 text-light"
+              for="flexSwitchCheckDefault"
+              >Dark</label
+            >
+          </div>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- scrolly spy -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <!-- home start -->
+      <section id="home">
+        <div class="container">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap"
+          >
+            <div
+              class="col-12 col-lg-6 order-2 order-lg-1 text-success text-center"
+            >
+              <h1 class="mb-3 head-text">Organic Fruits Store</h1>
+              <p class="home-text">
+                Organic-certified produce' means the food was grown, harvested,
+                stored and transported without the use of synthetic chemicals,
+                irradiation or fumigants.'Organic-certified produce' means the
+                food was grown, harvested, stored and transported without the
+                use of synthetic chemicals, irradiation
+              </p>
+              <div class="d-flex align-items-center justify-content-center">
+                <a class="btn btn-success rounded me-3">Order Now</a>
+                <a
+                  class="glightbox"
+                  href="https://www.youtube.com/watch?v=x5lom_Ua3HA"
+                >
+                  <i class="fa-solid fa-circle-play fs-2 text-success"></i>
+                </a>
+                <span class="ms-2 text-success">WATCH</span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
+              <img
+                class="img img-fluid"
+                src="./images/home.gif"
+                alt="home image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- home end -->
+
+      <!-- menu start -->
+      <section id="menu">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="text-success">Our Menu</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-4 g-xl-3">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Apple</h4>
+                      <h5>$ 0.5</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu2.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Kiwi</h4>
+                      <h5>$0.5</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu3.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Avocado</h4>
+                      <h5>$0.7</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu4.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Watermelon</h4>
+                      <h5>$2</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-4 g-xl-3">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu5.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Pineapple</h4>
+                      <h5>$1</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu6.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Orange</h4>
+                      <h5>$0.6</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu7.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Banana</h4>
+                      <h5>$0.7</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="./images/menu8.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center text-success">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Mango</h4>
+                      <h5>$0.25</h5>
+                    </div>
+                    <button class="btn btn-success">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- menu end -->
+
+      <!-- about start -->
+      <section id="about" class="mt-5">
+        <div class="container">
+          <div
+            class="row d-flex justify-content-between align-items-start text-center"
+          >
+            <div class="mb-3 col-12 text-success">
+              <h2>About Us</h2>
+            </div>
+            <div class="col-12 col-xl-6">
+              <img
+                class="img-fluid border border-success rounded"
+                src="./images/about.jpg"
+                alt="about image"
+              />
+            </div>
+            <div class="col-12 col-xl-6 text-center text-success">
+              <div class="row">
+                <div class="col-12">
+                  <p class="mb-3 mt-3 mt-xl-0">
+                    The year is 2018.Brian and Mike Coppin open the first Fruit
+                    & Veg City store In Access Park, Cape Town, launching one of
+                    the most incredible success stories South Africa has
+                    seen.The trade in fruits and vegetables can be traced back
+                    to the ancient civilizations of Mesopotamia, Egypt, and
+                    India. In these societies, fruits and vegetables were
+                    considered valuable commodities,voluptatibus quam est
+                    voluptatem laboriosam velit! and were often traded for other
+                    goods, such as textiles and precious metals.These people of
+                    the Upper no longer hunters ex- clusively and with
+                    whole-grain products and a variable amount of roots, fruits.
+                  </p>
+                </div>
+                <div class="col-12">
+                  <video
+                    class="w-100 border border-success rounded"
+                    src="./fruit video.mp4"
+                    muted
+                    loop
+                    autoplay
+                    controls
+                  ></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+
+      <!-- gallery start -->
+      <section id="gallery" class="mt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 mb-3">
+              <h2 class="text-success text-center">Gallery</h2>
+            </div>
+            <div class="row mainImgContainer">
+              <div class="col-12 mainImage ">
+                <img
+                  class="img img-fluid  border border-success"
+                  src="./images/gallery1.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="col-12 mainImage ">
+                <img
+                  class="img img-fluid  border border-success"
+                  src="./images/gallery2.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="col-12 mainImage ">
+                <img
+                  class="img img-fluid  border border-success"
+                  src="./images/gallery3.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="col-12 mainImage ">
+                <img
+                  class="img img-fluid  border border-success"
+                  src="./images/gallery4.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="col-12 mainImage ">
+                <img
+                  class="img img-fluid  border border-success"
+                  src="./images/gallery5.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="col-12 mainImage ">
+                <img
+                  class="img img-fluid  border border-success"
+                  src="./images/gallery6.jpg"
+                  alt="gallery image"
+                />
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev fs-1" onclick="plusSlides(-1)">
+                <i class="text-success fa-solid fa-circle-chevron-left iprev"></i>
+              </a>
+              <a class="next fs-1 text-success inext" onclick="plusSlides(1)">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </a>
+
+              <div class="mt-4 d-flex">
+                <div class="smallImage img-thumbnail border border-success border border-success">
+                  <img class="img img-fluid" src="./images/gallery1.jpg" onclick="currentSlide(1)" alt="small image">
+                </div>
+                <div class="smallImage img-thumbnail border border-success">
+                  <img class="img img-fluid" src="./images/gallery2.jpg" onclick="currentSlide(2)" alt="small image">
+                </div>
+                <div class="smallImage img-thumbnail border border-success">
+                  <img class="img img-fluid" src="./images/gallery3.jpg" onclick="currentSlide(3)" alt="small image">
+                </div>
+                <div class="smallImage img-thumbnail border border-success">
+                  <img class="img img-fluid" src="./images/gallery4.jpg" onclick="currentSlide(4)" alt="small image">
+                </div>
+                <div class="smallImage img-thumbnail border border-success">
+                  <img class="img img-fluid" src="./images/gallery5.jpg" onclick="currentSlide(5)" alt="small image">
+                </div>
+                <div class="smallImage img-thumbnail border border-success">
+                  <img class="img img-fluid" src="./images/gallery6.jpg" onclick="currentSlide(6)" alt="small image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery end -->
+
+      <!-- contact start -->
+       <section id="contact" class="mt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 mb-3">
+              <h2 class="text-success text-center">Contact Us</h2>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-5 text-center contactDiv rounded bg-success text-light m-2 ">
+                <h5><i class="fa-solid me-3 fa-map-location-dot"></i>Address</h5>
+                <p>No.123, Pyay Road, Yangon, Myanmar </p>
+              </div>
+              <div class="col-12 col-md-5 text-center contactDiv bg-success rounded text-light m-2">
+                <h5><i class="fa-solid me-3 fa-envelope-circle-check"></i>Email</h5>
+                <p>freshfruit@gmail.com</p>
+              </div>
+              <div class="col-12 col-md-5 text-center contactDiv rounded bg-success text-light m-2">
+                <h5><i class="fa-solid me-3 fa-phone"></i>Phone</h5>
+                <p>09-123456789</p>
+              </div>
+              <div class="col-12 col-md-5 text-center rounded contactDiv bg-success text-light m-2">
+                <h5><i class="fa-solid me-3 fa-clock"></i>Opening Time</h5>
+                <p>Daily: 8:00 A.M to 8:00 P.M</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center" >
+              <div class="col-12 col-md-5 text-center m-2 ">
+                <img class="img img-fluid w-75" src="./images/contact.svg" alt="svg image">
+              </div>
+              <div class="col-12 col-md-5 m-2">
+                <div class="my-3">
+                  <input type="text" class="form-control " placeholder="Your name...">
+                </div>
+                <div class="my-3">
+                  <input type="email" class="form-control " placeholder="Your email...">
+                </div>
+                <div class="my-3">
+                  <input type="text" class="form-control " placeholder="Your phone number...">
+                </div>
+                <div class="my-3">
+                  <textarea class="form-control " placeholder="Your message..."></textarea>
+                </div>
+                <div class="my-3">
+                  <input type="button" class="form-control  btn btn-success" value="Send Email">
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section> 
+      <!-- contact start -->
+    </div>
+
+     <!-- footer start -->
+     <footer>
+      <div class="container-fluid">
+          <div class="row text-success text-center justify-content-center">
+              <div class="col-6 col-lg-2 p-lg-4 pt-3">
+                  <h3><i class="fa-solid fa-location-dot"></i></h3>
+                  <h5>Address</h5>
+                  <h6>No.123, Pyay Road, Yangon, Myanmar.</h6>
+              </div>
+              <div class="col-6 col-lg-2 p-lg-4 pt-3">
+                  <h3><i class="fa-solid fa-mobile-screen-button"></i></h3>
+                  <h5>Opening Time</h5>
+                  <h6>Daily: 8:00 A.M to 8:00 P.M</h6>
+              </div>
+              <div class="col-6 col-lg-2 p-lg-4 pt-3">
+                  <h3><i class="fa-solid fa-clock"></i></h3>
+                  <h5>Order</h5>
+                  <h6>09-123456789</h6>
+              </div>
+              <div class="col-6 col-lg-2 p-lg-4 pt-3">
+                  <h3><i class="fa-solid fa-thumbs-up"></i></h3>
+                  <h5>Follow Us</h5>
+                  <h6>
+                      <i class="me-1 fa-brands fa-facebook"></i>
+                      <i class="me-1 fa-brands fa-youtube"></i>
+                      <i class="me-1 fa-brands fa-twitter"></i>
+                      <i class="me-1 fa-brands fa-instagram"></i>
+                  </h6>
+              </div>
+              
+              <div class="col-12 my-4 ">
+                  <h6>©Copyright <b>Fruits</b> All Rights Reserved</h6>
+                  <h6>Designed by <b ><i>Mee Mee</i></b></h6>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scroll up btn -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-success"><i class="fa-solid fa-angle-up"></i></button>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+  <script src="script.js"></script>
+</html>
